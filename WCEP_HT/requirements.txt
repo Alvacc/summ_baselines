@@ -1,0 +1,19 @@
+beautifulsoup4==4.9.3
+dataclasses==0.8
+#freeze==3.0
+numpy==1.19.4
+pandas==1.1.4
+#pkg-resources
+protobuf==3.14.0
+pyrouge==0.1.3
+python-dateutil==2.8.1
+pytz==2020.4
+sentencepiece==0.1.94
+six==1.15.0
+soupsieve==2.0.1
+tensorboardX==2.1
+torch==1.1.0
+typing-extensions==3.7.4.3
+
+# for 3090 server
+#pip install --pre torch==1.7.1+cu110 torchvision==0.8.2+cu110 -f https://download.pytorch.org/whl/torch_stable.html

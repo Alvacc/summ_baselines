@@ -1,0 +1,305 @@
+2022-01-17 23:10:55,172 INFO    : Pytorch 1.7.1+cu110
+2022-01-17 23:10:55,173 INFO    : [INFO] Create Vocab, vocab path is ../data/multinews_HeterSumGraph/graphfile/cache/MultiNews/vocab
+2022-01-17 23:10:55,208 INFO    : [INFO] max_size of vocab was specified as 50000; we now have 50000 words. Stopping reading.
+2022-01-17 23:10:55,208 INFO    : [INFO] Finished constructing vocabulary of 50000 total words. Last word added: medicated
+2022-01-17 23:10:55,317 INFO    : [INFO] Loading external word embedding...
+2022-01-17 23:11:28,443 INFO    : [INFO] External Word Embedding iov count: 48908, oov count: 1092
+2022-01-17 23:11:28,554 INFO    : Namespace(atten_dropout_prob=0.1, batch_size=32, bidirectional=True, cache_dir='../data/multinews_HeterSumGraph/graphfile/cache/MultiNews', cuda=True, data_dir='../data/multinews_HeterSumGraph/datasets/multinews', doc_max_timesteps=50, embed_train=False, embedding_path='../data/multinews_HeterSumGraph/Glove/glove.42B.300d.txt', feat_embed_size=50, ffn_dropout_prob=0.1, ffn_inner_hidden_size=512, gpu='1', grad_clip=True, hidden_size=64, log_root='models/20220117_HeterSumGraph_baseline', lr=0.0005, lr_descent=True, lstm_hidden_state=128, lstm_layers=2, m=3, max_grad_norm=1.0, model='HDSG', n_epochs=20, n_feature_size=128, n_head=8, n_iter=1, n_layers=1, recurrent_dropout_prob=0.1, restore_model='None', save_root='models/20220117_HeterSumGraph_baseline', seed=666, sent_max_len=100, use_orthnormal_init=True, vocab_size=50000, word_emb_dim=300, word_embedding=True)
+2022-01-17 23:11:28,646 INFO    : [MODEL] HeterDocSumGraph 
+2022-01-17 23:11:28,647 INFO    : [INFO] Start reading MultiExampleSet
+2022-01-17 23:11:30,116 INFO    : [INFO] Finish reading MultiExampleSet. Total time is 1.469179, Total size is 44972
+2022-01-17 23:11:30,116 INFO    : [INFO] Loading filter word File ../data/multinews_HeterSumGraph/graphfile/cache/MultiNews/filter_word.txt
+2022-01-17 23:11:30,191 INFO    : [INFO] Loading word2sent TFIDF file from ../data/multinews_HeterSumGraph/graphfile/cache/MultiNews/train.w2s.tfidf.jsonl!
+2022-01-17 23:11:37,214 INFO    : [INFO] Loading word2doc TFIDF file from ../data/multinews_HeterSumGraph/graphfile/cache/MultiNews/train.w2d.tfidf.jsonl!
+2022-01-17 23:11:41,937 INFO    : [INFO] Start reading MultiExampleSet
+2022-01-17 23:11:42,044 INFO    : [INFO] Finish reading MultiExampleSet. Total time is 0.107365, Total size is 5622
+2022-01-17 23:11:42,044 INFO    : [INFO] Loading filter word File ../data/multinews_HeterSumGraph/graphfile/cache/MultiNews/filter_word.txt
+2022-01-17 23:11:42,121 INFO    : [INFO] Loading word2sent TFIDF file from ../data/multinews_HeterSumGraph/graphfile/cache/MultiNews/val.w2s.tfidf.jsonl!
+2022-01-17 23:11:42,972 INFO    : [INFO] Loading word2doc TFIDF file from ../data/multinews_HeterSumGraph/graphfile/cache/MultiNews/val.w2d.tfidf.jsonl!
+2022-01-17 23:11:45,225 INFO    : [INFO] Use cuda
+2022-01-17 23:11:45,225 INFO    : [INFO] Create new model for training...
+2022-01-17 23:11:45,225 INFO    : [INFO] Starting run_training
+2022-01-17 23:11:49,644 INFO    :        | end of iter   0 | time:  1.99s | train loss 0.1424 | 
+2022-01-17 23:18:42,174 INFO    :        | end of iter 100 | time:  1.55s | train loss 15.2162 | 
+2022-01-17 23:25:33,139 INFO    :        | end of iter 200 | time:  1.61s | train loss 14.2900 | 
+2022-01-17 23:32:22,477 INFO    :        | end of iter 300 | time:  1.50s | train loss 14.1866 | 
+2022-01-17 23:39:13,554 INFO    :        | end of iter 400 | time:  2.03s | train loss 14.0732 | 
+2022-01-17 23:46:04,534 INFO    :        | end of iter 500 | time:  1.95s | train loss 13.9652 | 
+2022-01-17 23:52:52,889 INFO    :        | end of iter 600 | time:  1.58s | train loss 13.9944 | 
+2022-01-17 23:59:40,657 INFO    :        | end of iter 700 | time:  1.60s | train loss 13.9366 | 
+2022-01-18 00:06:30,405 INFO    :        | end of iter 800 | time:  1.59s | train loss 13.8277 | 
+2022-01-18 00:13:21,083 INFO    :        | end of iter 900 | time:  1.53s | train loss 13.7239 | 
+2022-01-18 00:20:14,095 INFO    :        | end of iter 1000 | time:  1.61s | train loss 13.7716 | 
+2022-01-18 00:27:05,461 INFO    :        | end of iter 1100 | time:  1.56s | train loss 13.6990 | 
+2022-01-18 00:33:54,554 INFO    :        | end of iter 1200 | time:  1.55s | train loss 13.6484 | 
+2022-01-18 00:40:45,475 INFO    :        | end of iter 1300 | time:  1.59s | train loss 13.7023 | 
+2022-01-18 00:47:36,317 INFO    :        | end of iter 1400 | time:  1.61s | train loss 13.6888 | 
+2022-01-18 00:47:54,574 INFO    : [INFO] The learning rate now is 0.000250
+2022-01-18 00:47:54,575 INFO    :    | end of epoch   1 | time: 5769.35s | epoch train loss 13.9794 | 
+2022-01-18 00:47:54,575 INFO    : [INFO] Found new best model with 13.979 running_train_loss. Saving to models/20220117_HeterSumGraph_baseline/train/bestmodel
+2022-01-18 00:47:54,653 INFO    : [INFO] Saving model to models/20220117_HeterSumGraph_baseline/train/bestmodel
+2022-01-18 00:47:54,654 INFO    : [INFO] Starting eval for this model ...
+2022-01-18 01:06:27,176 INFO    : [INFO] End of valid | time: 1112.52s | valid loss 13.5738 | 
+2022-01-18 01:06:27,177 INFO    : Rouge1:
+	p:0.566144, r:0.238216, f:0.321542
+Rouge2:
+	p:0.195808, r:0.081070, f:0.110007
+Rougel:
+	p:0.451705, r:0.214337, f:0.282443
+
+2022-01-18 01:06:27,177 INFO    : [INFO] Validset match_true 10720, pred 16864, true 50291, total 121375, match 75660
+2022-01-18 01:06:27,177 INFO    : [INFO] The size of totalset is 5622, sent_number is 121375, accu is 0.623357, precision is 0.635674, recall is 0.213159, F is 0.319261
+2022-01-18 01:06:27,177 INFO    : [INFO] Found new best model with 13.573778 running_avg_loss. The original loss is None, Saving to models/20220117_HeterSumGraph_baseline/eval/bestmodel_0
+2022-01-18 01:06:27,263 INFO    : [INFO] Found new best model with 0.319261 F. The original F is None, Saving to models/20220117_HeterSumGraph_baseline/eval/bestFmodel
+2022-01-18 01:06:31,458 INFO    :        | end of iter   0 | time:  1.57s | train loss 0.1285 | 
+2022-01-18 01:13:25,853 INFO    :        | end of iter 100 | time:  1.61s | train loss 13.5813 | 
+2022-01-18 01:20:14,277 INFO    :        | end of iter 200 | time:  1.59s | train loss 13.5336 | 
+2022-01-18 01:27:04,727 INFO    :        | end of iter 300 | time:  1.52s | train loss 13.4567 | 
+2022-01-18 01:33:56,095 INFO    :        | end of iter 400 | time:  1.55s | train loss 13.5501 | 
+2022-01-18 01:40:45,563 INFO    :        | end of iter 500 | time:  1.56s | train loss 13.5117 | 
+2022-01-18 01:47:37,070 INFO    :        | end of iter 600 | time:  1.98s | train loss 13.4837 | 
+2022-01-18 01:54:26,130 INFO    :        | end of iter 700 | time:  1.57s | train loss 13.4335 | 
+2022-01-18 02:01:15,013 INFO    :        | end of iter 800 | time:  1.56s | train loss 13.4262 | 
+2022-01-18 02:08:05,146 INFO    :        | end of iter 900 | time:  1.57s | train loss 13.4372 | 
+2022-01-18 02:14:54,442 INFO    :        | end of iter 1000 | time:  1.59s | train loss 13.3860 | 
+2022-01-18 02:21:43,433 INFO    :        | end of iter 1100 | time:  1.61s | train loss 13.4571 | 
+2022-01-18 02:28:35,918 INFO    :        | end of iter 1200 | time:  1.60s | train loss 13.3593 | 
+2022-01-18 02:35:26,349 INFO    :        | end of iter 1300 | time:  1.44s | train loss 13.3843 | 
+2022-01-18 02:42:16,084 INFO    :        | end of iter 1400 | time:  1.57s | train loss 13.4412 | 
+2022-01-18 02:42:33,762 INFO    : [INFO] The learning rate now is 0.000167
+2022-01-18 02:42:33,762 INFO    :    | end of epoch   2 | time: 5766.42s | epoch train loss 13.4593 | 
+2022-01-18 02:42:33,762 INFO    : [INFO] Found new best model with 13.459 running_train_loss. Saving to models/20220117_HeterSumGraph_baseline/train/bestmodel
+2022-01-18 02:42:34,136 INFO    : [INFO] Saving model to models/20220117_HeterSumGraph_baseline/train/bestmodel
+2022-01-18 02:42:34,136 INFO    : [INFO] Starting eval for this model ...
+2022-01-18 03:00:56,587 INFO    : [INFO] End of valid | time: 1102.45s | valid loss 13.3628 | 
+2022-01-18 03:00:56,587 INFO    : Rouge1:
+	p:0.583173, r:0.210283, f:0.294824
+Rouge2:
+	p:0.205672, r:0.073070, f:0.102968
+Rougel:
+	p:0.476276, r:0.198668, f:0.271218
+
+2022-01-18 03:00:56,587 INFO    : [INFO] Validset match_true 10779, pred 16864, true 50291, total 121375, match 75778
+2022-01-18 03:00:56,587 INFO    : [INFO] The size of totalset is 5622, sent_number is 121375, accu is 0.624330, precision is 0.639172, recall is 0.214333, F is 0.321019
+2022-01-18 03:00:56,588 INFO    : [INFO] Found new best model with 13.362844 running_avg_loss. The original loss is 13.573778, Saving to models/20220117_HeterSumGraph_baseline/eval/bestmodel_1
+2022-01-18 03:00:56,683 INFO    : [INFO] Found new best model with 0.321019 F. The original F is 0.319261, Saving to models/20220117_HeterSumGraph_baseline/eval/bestFmodel
+2022-01-18 03:01:01,179 INFO    :        | end of iter   0 | time:  1.60s | train loss 0.1406 | 
+2022-01-18 03:07:53,354 INFO    :        | end of iter 100 | time:  1.56s | train loss 13.3543 | 
+2022-01-18 03:14:42,360 INFO    :        | end of iter 200 | time:  1.54s | train loss 13.3200 | 
+2022-01-18 03:21:32,488 INFO    :        | end of iter 300 | time:  1.63s | train loss 13.2840 | 
+2022-01-18 03:28:23,643 INFO    :        | end of iter 400 | time:  1.61s | train loss 13.1933 | 
+2022-01-18 03:35:15,306 INFO    :        | end of iter 500 | time:  1.58s | train loss 13.3120 | 
+2022-01-18 03:42:06,457 INFO    :        | end of iter 600 | time:  1.58s | train loss 13.3304 | 
+2022-01-18 03:48:54,728 INFO    :        | end of iter 700 | time:  1.54s | train loss 13.3448 | 
+2022-01-18 03:55:42,391 INFO    :        | end of iter 800 | time:  1.53s | train loss 13.1982 | 
+2022-01-18 04:02:34,903 INFO    :        | end of iter 900 | time:  1.61s | train loss 13.3316 | 
+2022-01-18 04:09:27,003 INFO    :        | end of iter 1000 | time:  1.56s | train loss 13.3296 | 
+2022-01-18 04:16:14,653 INFO    :        | end of iter 1100 | time:  1.55s | train loss 13.3519 | 
+2022-01-18 04:23:03,772 INFO    :        | end of iter 1200 | time:  1.58s | train loss 13.3312 | 
+2022-01-18 04:29:51,553 INFO    :        | end of iter 1300 | time:  1.61s | train loss 13.1913 | 
+2022-01-18 04:36:40,515 INFO    :        | end of iter 1400 | time:  1.61s | train loss 13.1282 | 
+2022-01-18 04:36:59,071 INFO    : [INFO] The learning rate now is 0.000125
+2022-01-18 04:36:59,071 INFO    :    | end of epoch   3 | time: 5762.00s | epoch train loss 13.2871 | 
+2022-01-18 04:36:59,071 INFO    : [INFO] Found new best model with 13.287 running_train_loss. Saving to models/20220117_HeterSumGraph_baseline/train/bestmodel
+2022-01-18 04:36:59,446 INFO    : [INFO] Saving model to models/20220117_HeterSumGraph_baseline/train/bestmodel
+2022-01-18 04:36:59,447 INFO    : [INFO] Starting eval for this model ...
+2022-01-18 04:55:12,967 INFO    : [INFO] End of valid | time: 1093.52s | valid loss 13.3205 | 
+2022-01-18 04:55:12,967 INFO    : Rouge1:
+	p:0.594903, r:0.196804, f:0.283428
+Rouge2:
+	p:0.213969, r:0.069819, f:0.100993
+Rougel:
+	p:0.491056, r:0.191705, f:0.267494
+
+2022-01-18 04:55:12,967 INFO    : [INFO] Validset match_true 10799, pred 16864, true 50291, total 121375, match 75818
+2022-01-18 04:55:12,967 INFO    : [INFO] The size of totalset is 5622, sent_number is 121375, accu is 0.624659, precision is 0.640358, recall is 0.214730, F is 0.321614
+2022-01-18 04:55:12,967 INFO    : [INFO] Found new best model with 13.320512 running_avg_loss. The original loss is 13.362844, Saving to models/20220117_HeterSumGraph_baseline/eval/bestmodel_2
+2022-01-18 04:55:13,061 INFO    : [INFO] Found new best model with 0.321614 F. The original F is 0.321019, Saving to models/20220117_HeterSumGraph_baseline/eval/bestFmodel
+2022-01-18 04:55:17,601 INFO    :        | end of iter   0 | time:  1.63s | train loss 0.1318 | 
+2022-01-18 05:02:09,624 INFO    :        | end of iter 100 | time:  1.53s | train loss 13.2275 | 
+2022-01-18 05:08:59,231 INFO    :        | end of iter 200 | time:  1.61s | train loss 13.1275 | 
+2022-01-18 05:15:48,798 INFO    :        | end of iter 300 | time:  1.63s | train loss 13.1694 | 
+2022-01-18 05:22:38,064 INFO    :        | end of iter 400 | time:  1.53s | train loss 13.2188 | 
+2022-01-18 05:29:28,730 INFO    :        | end of iter 500 | time:  1.52s | train loss 13.1347 | 
+2022-01-18 05:36:18,589 INFO    :        | end of iter 600 | time:  1.57s | train loss 13.2952 | 
+2022-01-18 05:43:10,269 INFO    :        | end of iter 700 | time:  1.55s | train loss 13.0894 | 
+2022-01-18 05:50:01,735 INFO    :        | end of iter 800 | time:  2.01s | train loss 13.0509 | 
+2022-01-18 05:56:51,343 INFO    :        | end of iter 900 | time:  1.60s | train loss 13.1602 | 
+2022-01-18 06:03:41,344 INFO    :        | end of iter 1000 | time:  1.52s | train loss 13.2003 | 
+2022-01-18 06:10:31,546 INFO    :        | end of iter 1100 | time:  1.55s | train loss 13.1758 | 
+2022-01-18 06:17:22,610 INFO    :        | end of iter 1200 | time:  1.57s | train loss 13.1809 | 
+2022-01-18 06:24:11,141 INFO    :        | end of iter 1300 | time:  1.61s | train loss 13.2405 | 
+2022-01-18 06:30:59,678 INFO    :        | end of iter 1400 | time:  1.59s | train loss 13.1455 | 
+2022-01-18 06:31:17,819 INFO    : [INFO] The learning rate now is 0.000100
+2022-01-18 06:31:17,819 INFO    :    | end of epoch   4 | time: 5764.38s | epoch train loss 13.1730 | 
+2022-01-18 06:31:17,819 INFO    : [INFO] Found new best model with 13.173 running_train_loss. Saving to models/20220117_HeterSumGraph_baseline/train/bestmodel
+2022-01-18 06:31:18,171 INFO    : [INFO] Saving model to models/20220117_HeterSumGraph_baseline/train/bestmodel
+2022-01-18 06:31:18,171 INFO    : [INFO] Starting eval for this model ...
+2022-01-18 06:49:40,130 INFO    : [INFO] End of valid | time: 1101.96s | valid loss 13.2371 | 
+2022-01-18 06:49:40,130 INFO    : Rouge1:
+	p:0.582665, r:0.217295, f:0.303134
+Rouge2:
+	p:0.205775, r:0.075581, f:0.105981
+Rougel:
+	p:0.475384, r:0.204432, f:0.277545
+
+2022-01-18 06:49:40,130 INFO    : [INFO] Validset match_true 11020, pred 16864, true 50291, total 121375, match 76260
+2022-01-18 06:49:40,131 INFO    : [INFO] The size of totalset is 5622, sent_number is 121375, accu is 0.628301, precision is 0.653463, recall is 0.219125, F is 0.328196
+2022-01-18 06:49:40,131 INFO    : [INFO] Found new best model with 13.237094 running_avg_loss. The original loss is 13.320512, Saving to models/20220117_HeterSumGraph_baseline/eval/bestmodel_0
+2022-01-18 06:49:40,526 INFO    : [INFO] Found new best model with 0.328196 F. The original F is 0.321614, Saving to models/20220117_HeterSumGraph_baseline/eval/bestFmodel
+2022-01-18 06:49:45,002 INFO    :        | end of iter   0 | time:  1.60s | train loss 0.1306 | 
+2022-01-18 06:56:34,921 INFO    :        | end of iter 100 | time:  1.57s | train loss 13.0273 | 
+2022-01-18 07:03:23,970 INFO    :        | end of iter 200 | time:  1.57s | train loss 13.0837 | 
+2022-01-18 07:10:11,871 INFO    :        | end of iter 300 | time:  1.58s | train loss 13.0102 | 
+2022-01-18 07:17:04,005 INFO    :        | end of iter 400 | time:  1.59s | train loss 13.1018 | 
+2022-01-18 07:23:57,346 INFO    :        | end of iter 500 | time:  1.99s | train loss 13.1967 | 
+2022-01-18 07:30:47,577 INFO    :        | end of iter 600 | time:  1.61s | train loss 13.1146 | 
+2022-01-18 07:37:35,966 INFO    :        | end of iter 700 | time:  1.60s | train loss 13.1018 | 
+2022-01-18 07:44:24,560 INFO    :        | end of iter 800 | time:  1.60s | train loss 13.0611 | 
+2022-01-18 07:51:13,499 INFO    :        | end of iter 900 | time:  1.58s | train loss 12.9755 | 
+2022-01-18 07:58:04,858 INFO    :        | end of iter 1000 | time:  1.55s | train loss 13.1433 | 
+2022-01-18 08:04:56,078 INFO    :        | end of iter 1100 | time:  2.02s | train loss 13.0620 | 
+2022-01-18 08:11:47,510 INFO    :        | end of iter 1200 | time:  1.61s | train loss 12.9561 | 
+2022-01-18 08:18:37,866 INFO    :        | end of iter 1300 | time:  1.54s | train loss 13.1806 | 
+2022-01-18 08:25:26,438 INFO    :        | end of iter 1400 | time:  1.58s | train loss 13.2296 | 
+2022-01-18 08:25:44,346 INFO    : [INFO] The learning rate now is 0.000083
+2022-01-18 08:25:44,347 INFO    :    | end of epoch   5 | time: 5763.46s | epoch train loss 13.0901 | 
+2022-01-18 08:25:44,347 INFO    : [INFO] Found new best model with 13.090 running_train_loss. Saving to models/20220117_HeterSumGraph_baseline/train/bestmodel
+2022-01-18 08:25:44,708 INFO    : [INFO] Saving model to models/20220117_HeterSumGraph_baseline/train/bestmodel
+2022-01-18 08:25:44,708 INFO    : [INFO] Starting eval for this model ...
+2022-01-18 08:44:00,763 INFO    : [INFO] End of valid | time: 1096.05s | valid loss 13.2299 | 
+2022-01-18 08:44:00,763 INFO    : Rouge1:
+	p:0.594862, r:0.196379, f:0.282339
+Rouge2:
+	p:0.214202, r:0.069729, f:0.100751
+Rougel:
+	p:0.491980, r:0.191745, f:0.267399
+
+2022-01-18 08:44:00,763 INFO    : [INFO] Validset match_true 10896, pred 16864, true 50291, total 121375, match 76012
+2022-01-18 08:44:00,763 INFO    : [INFO] The size of totalset is 5622, sent_number is 121375, accu is 0.626257, precision is 0.646110, recall is 0.216659, F is 0.324503
+2022-01-18 08:44:00,763 INFO    : [INFO] Found new best model with 13.229932 running_avg_loss. The original loss is 13.237094, Saving to models/20220117_HeterSumGraph_baseline/eval/bestmodel_1
+2022-01-18 08:44:05,218 INFO    :        | end of iter   0 | time:  1.56s | train loss 0.1338 | 
+2022-01-18 08:50:56,367 INFO    :        | end of iter 100 | time:  1.67s | train loss 13.1073 | 
+2022-01-18 08:57:46,308 INFO    :        | end of iter 200 | time:  1.58s | train loss 13.0890 | 
+2022-01-18 09:04:37,547 INFO    :        | end of iter 300 | time:  1.59s | train loss 13.0031 | 
+2022-01-18 09:11:27,858 INFO    :        | end of iter 400 | time:  1.63s | train loss 13.0767 | 
+2022-01-18 09:18:17,749 INFO    :        | end of iter 500 | time:  1.49s | train loss 12.9501 | 
+2022-01-18 09:25:06,865 INFO    :        | end of iter 600 | time:  1.61s | train loss 12.9269 | 
+2022-01-18 09:31:57,064 INFO    :        | end of iter 700 | time:  1.57s | train loss 12.9963 | 
+2022-01-18 09:38:49,959 INFO    :        | end of iter 800 | time:  1.55s | train loss 13.0301 | 
+2022-01-18 09:45:39,905 INFO    :        | end of iter 900 | time:  1.56s | train loss 13.0711 | 
+2022-01-18 09:52:29,338 INFO    :        | end of iter 1000 | time:  1.64s | train loss 13.0210 | 
+2022-01-18 09:59:20,474 INFO    :        | end of iter 1100 | time:  1.58s | train loss 13.0159 | 
+2022-01-18 10:06:10,047 INFO    :        | end of iter 1200 | time:  1.55s | train loss 13.0134 | 
+2022-01-18 10:13:00,383 INFO    :        | end of iter 1300 | time:  1.52s | train loss 13.0213 | 
+2022-01-18 10:19:49,114 INFO    :        | end of iter 1400 | time:  1.58s | train loss 12.9866 | 
+2022-01-18 10:20:07,166 INFO    : [INFO] The learning rate now is 0.000071
+2022-01-18 10:20:07,166 INFO    :    | end of epoch   6 | time: 5766.08s | epoch train loss 13.0215 | 
+2022-01-18 10:20:07,166 INFO    : [INFO] Found new best model with 13.022 running_train_loss. Saving to models/20220117_HeterSumGraph_baseline/train/bestmodel
+2022-01-18 10:20:07,514 INFO    : [INFO] Saving model to models/20220117_HeterSumGraph_baseline/train/bestmodel
+2022-01-18 10:20:07,514 INFO    : [INFO] Starting eval for this model ...
+2022-01-18 10:38:24,398 INFO    : [INFO] End of valid | time: 1096.88s | valid loss 13.2066 | 
+2022-01-18 10:38:24,398 INFO    : Rouge1:
+	p:0.594589, r:0.193963, f:0.280684
+Rouge2:
+	p:0.212768, r:0.068850, f:0.099958
+Rougel:
+	p:0.490438, r:0.191045, f:0.267129
+
+2022-01-18 10:38:24,399 INFO    : [INFO] Validset match_true 10850, pred 16864, true 50291, total 121375, match 75920
+2022-01-18 10:38:24,399 INFO    : [INFO] The size of totalset is 5622, sent_number is 121375, accu is 0.625499, precision is 0.643382, recall is 0.215744, F is 0.323133
+2022-01-18 10:38:24,399 INFO    : [INFO] Found new best model with 13.206644 running_avg_loss. The original loss is 13.229932, Saving to models/20220117_HeterSumGraph_baseline/eval/bestmodel_2
+2022-01-18 10:38:28,770 INFO    :        | end of iter   0 | time:  1.55s | train loss 0.1276 | 
+2022-01-18 10:45:19,628 INFO    :        | end of iter 100 | time:  1.67s | train loss 13.0349 | 
+2022-01-18 10:52:12,193 INFO    :        | end of iter 200 | time:  1.58s | train loss 13.0280 | 
+2022-01-18 10:59:03,239 INFO    :        | end of iter 300 | time:  1.60s | train loss 12.9775 | 
+2022-01-18 11:05:54,619 INFO    :        | end of iter 400 | time:  1.61s | train loss 12.9767 | 
+2022-01-18 11:12:46,536 INFO    :        | end of iter 500 | time:  1.94s | train loss 12.9633 | 
+2022-01-18 11:19:36,262 INFO    :        | end of iter 600 | time:  1.57s | train loss 12.8712 | 
+2022-01-18 11:26:25,042 INFO    :        | end of iter 700 | time:  1.56s | train loss 12.9365 | 
+2022-01-18 11:33:15,431 INFO    :        | end of iter 800 | time:  1.47s | train loss 12.8948 | 
+2022-01-18 11:40:05,291 INFO    :        | end of iter 900 | time:  1.55s | train loss 12.9403 | 
+2022-01-18 11:46:54,729 INFO    :        | end of iter 1000 | time:  1.50s | train loss 12.9043 | 
+2022-01-18 11:53:43,958 INFO    :        | end of iter 1100 | time:  1.59s | train loss 12.9984 | 
+2022-01-18 12:00:33,969 INFO    :        | end of iter 1200 | time:  1.55s | train loss 13.0218 | 
+2022-01-18 12:07:21,434 INFO    :        | end of iter 1300 | time:  1.59s | train loss 12.8953 | 
+2022-01-18 12:14:13,475 INFO    :        | end of iter 1400 | time:  1.64s | train loss 13.0163 | 
+2022-01-18 12:14:32,214 INFO    : [INFO] The learning rate now is 0.000063
+2022-01-18 12:14:32,215 INFO    :    | end of epoch   7 | time: 5767.43s | epoch train loss 12.9626 | 
+2022-01-18 12:14:32,215 INFO    : [INFO] Found new best model with 12.963 running_train_loss. Saving to models/20220117_HeterSumGraph_baseline/train/bestmodel
+2022-01-18 12:14:32,595 INFO    : [INFO] Saving model to models/20220117_HeterSumGraph_baseline/train/bestmodel
+2022-01-18 12:14:32,596 INFO    : [INFO] Starting eval for this model ...
+2022-01-18 12:32:53,517 INFO    : [INFO] End of valid | time: 1100.92s | valid loss 13.2183 | 
+2022-01-18 12:32:53,517 INFO    : Rouge1:
+	p:0.591841, r:0.206122, f:0.292982
+Rouge2:
+	p:0.212534, r:0.072909, f:0.104197
+Rougel:
+	p:0.483976, r:0.198422, f:0.273268
+
+2022-01-18 12:32:53,517 INFO    : [INFO] Validset match_true 10984, pred 16864, true 50291, total 121375, match 76188
+2022-01-18 12:32:53,518 INFO    : [INFO] The size of totalset is 5622, sent_number is 121375, accu is 0.627708, precision is 0.651328, recall is 0.218409, F is 0.327124
+2022-01-18 12:32:57,755 INFO    :        | end of iter   0 | time:  1.67s | train loss 0.1447 | 
+2022-01-18 12:39:48,161 INFO    :        | end of iter 100 | time:  1.62s | train loss 12.8835 | 
+2022-01-18 12:46:37,380 INFO    :        | end of iter 200 | time:  1.49s | train loss 12.8682 | 
+2022-01-18 12:53:26,822 INFO    :        | end of iter 300 | time:  1.54s | train loss 12.9235 | 
+2022-01-18 13:00:16,782 INFO    :        | end of iter 400 | time:  1.51s | train loss 12.9937 | 
+2022-01-18 13:07:05,234 INFO    :        | end of iter 500 | time:  1.54s | train loss 12.9083 | 
+2022-01-18 13:13:56,072 INFO    :        | end of iter 600 | time:  1.64s | train loss 13.0066 | 
+2022-01-18 13:20:47,041 INFO    :        | end of iter 700 | time:  1.59s | train loss 13.0151 | 
+2022-01-18 13:27:35,339 INFO    :        | end of iter 800 | time:  1.54s | train loss 12.8199 | 
+2022-01-18 13:34:26,093 INFO    :        | end of iter 900 | time:  1.90s | train loss 13.0085 | 
+2022-01-18 13:41:15,725 INFO    :        | end of iter 1000 | time:  1.61s | train loss 12.8842 | 
+2022-01-18 13:48:06,386 INFO    :        | end of iter 1100 | time:  1.60s | train loss 12.7466 | 
+2022-01-18 13:54:58,444 INFO    :        | end of iter 1200 | time:  1.59s | train loss 12.9787 | 
+2022-01-18 14:01:48,434 INFO    :        | end of iter 1300 | time:  1.60s | train loss 12.9210 | 
+2022-01-18 14:08:38,682 INFO    :        | end of iter 1400 | time:  1.61s | train loss 12.7964 | 
+2022-01-18 14:08:56,640 INFO    : [INFO] The learning rate now is 0.000056
+2022-01-18 14:08:56,641 INFO    :    | end of epoch   8 | time: 5763.12s | epoch train loss 12.9119 | 
+2022-01-18 14:08:56,641 INFO    : [INFO] Found new best model with 12.912 running_train_loss. Saving to models/20220117_HeterSumGraph_baseline/train/bestmodel
+2022-01-18 14:08:56,989 INFO    : [INFO] Saving model to models/20220117_HeterSumGraph_baseline/train/bestmodel
+2022-01-18 14:08:56,990 INFO    : [INFO] Starting eval for this model ...
+2022-01-18 14:27:16,946 INFO    : [INFO] End of valid | time: 1099.96s | valid loss 13.2129 | 
+2022-01-18 14:27:16,947 INFO    : Rouge1:
+	p:0.593418, r:0.198873, f:0.285553
+Rouge2:
+	p:0.213993, r:0.070809, f:0.102161
+Rougel:
+	p:0.487386, r:0.193937, f:0.269400
+
+2022-01-18 14:27:16,947 INFO    : [INFO] Validset match_true 10841, pred 16864, true 50291, total 121375, match 75902
+2022-01-18 14:27:16,947 INFO    : [INFO] The size of totalset is 5622, sent_number is 121375, accu is 0.625351, precision is 0.642849, recall is 0.215565, F is 0.322865
+2022-01-18 14:27:21,031 INFO    :        | end of iter   0 | time:  1.56s | train loss 0.1286 | 
+2022-01-18 14:34:13,829 INFO    :        | end of iter 100 | time:  1.59s | train loss 12.8829 | 
+2022-01-18 14:41:04,099 INFO    :        | end of iter 200 | time:  1.57s | train loss 12.8006 | 
+2022-01-18 14:47:55,571 INFO    :        | end of iter 300 | time:  1.63s | train loss 12.8041 | 
+2022-01-18 14:54:44,099 INFO    :        | end of iter 400 | time:  1.61s | train loss 12.9017 | 
+2022-01-18 15:01:33,167 INFO    :        | end of iter 500 | time:  1.99s | train loss 12.9052 | 
+2022-01-18 15:08:25,306 INFO    :        | end of iter 600 | time:  1.62s | train loss 12.7570 | 
+2022-01-18 15:15:16,923 INFO    :        | end of iter 700 | time:  1.93s | train loss 12.8408 | 
+2022-01-18 15:22:08,999 INFO    :        | end of iter 800 | time:  2.01s | train loss 12.8879 | 
+2022-01-18 15:28:59,449 INFO    :        | end of iter 900 | time:  1.61s | train loss 12.8544 | 
+2022-01-18 15:35:49,360 INFO    :        | end of iter 1000 | time:  1.57s | train loss 12.9166 | 
+2022-01-18 15:42:37,628 INFO    :        | end of iter 1100 | time:  1.54s | train loss 12.8331 | 
+2022-01-18 15:49:28,907 INFO    :        | end of iter 1200 | time:  1.60s | train loss 12.9347 | 
+2022-01-18 15:56:18,058 INFO    :        | end of iter 1300 | time:  1.60s | train loss 12.7988 | 
+2022-01-18 16:03:12,936 INFO    :        | end of iter 1400 | time:  1.68s | train loss 12.9755 | 
+2022-01-18 16:03:31,286 INFO    : [INFO] The learning rate now is 0.000050
+2022-01-18 16:03:31,286 INFO    :    | end of epoch   9 | time: 5774.33s | epoch train loss 12.8636 | 
+2022-01-18 16:03:31,286 INFO    : [INFO] Found new best model with 12.864 running_train_loss. Saving to models/20220117_HeterSumGraph_baseline/train/bestmodel
+2022-01-18 16:03:31,634 INFO    : [INFO] Saving model to models/20220117_HeterSumGraph_baseline/train/bestmodel
+2022-01-18 16:03:31,635 INFO    : [INFO] Starting eval for this model ...
+2022-01-18 16:21:50,640 INFO    : [INFO] End of valid | time: 1099.00s | valid loss 13.2174 | 
+2022-01-18 16:21:50,641 INFO    : Rouge1:
+	p:0.594262, r:0.194189, f:0.279889
+Rouge2:
+	p:0.213995, r:0.069146, f:0.100089
+Rougel:
+	p:0.489882, r:0.190718, f:0.265999
+
+2022-01-18 16:21:50,641 INFO    : [INFO] Validset match_true 10858, pred 16864, true 50291, total 121375, match 75936
+2022-01-18 16:21:50,641 INFO    : [INFO] The size of totalset is 5622, sent_number is 121375, accu is 0.625631, precision is 0.643857, recall is 0.215903, F is 0.323371
+2022-01-18 16:21:50,645 ERROR   : [Error] val loss does not descent for three times. Stopping supervisor...
+2022-01-18 16:21:50,737 INFO    : [INFO] Saving model to models/20220117_HeterSumGraph_baseline/train/earlystop
+[nltk_data] Downloading package stopwords to /home/alva/nltk_data...
+[nltk_data]   Package stopwords is already up-to-date!

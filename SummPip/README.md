@@ -1,0 +1,40 @@
+# SummPip
+
+**This code is for Sigir 2020 paper** [SummPip: Unsupervised Multi-Document Summarization with Sentence Graph Compression](https://dl.acm.org/doi/pdf/10.1145/3397271.3401327)
+
+**Python version**: this code is in Python3.6
+
+## Dataset
+
+[source data](https://drive.google.com/file/d/1_iDBecWsEkzuEou5-xi0z2ek3oJJ8CPB/view?usp=sharing) which has minimal text pre-processing
+
+[target data](https://drive.google.com/file/d/1T9uE2sF3bN3a1T2KLp7mR4xK9MqqpkH1/view?usp=sharing) (for evaluation)
+
+## Test SummPip
+
+**Step1**: place downloaded dataset in the folder `./dataset/multi_news/`.
+
+**Step2**: download the pre-trained [word2vec model](https://drive.google.com/file/d/1DVaktsGKbH8oPy28rrHuVgL_QVDsbfSA/view?usp=sharing) and place it in the folder `./word_vec/multi_news`. 
+
+- If you want to run SummPip on your own dataset, you need to pre-train a W2V model yourself first with [gensim](https://radimrehurek.com/gensim/index.html).
+
+**Step3**: Unsupervised Extractive Summarisation
+
+```
+python run_main.py
+```
+
+- You may want to change `-nb_clusters` and `-nb_words` to control the length of the output summary when applying SummPip on your own dataset. 
+
+
+## Citation
+Please cite if you use our code in production or publications
+```bibtex
+@inproceedings{zhao2020summpip,
+  title={SummPip: Unsupervised Multi-Document Summarization with Sentence Graph Compression},
+  author={Zhao, Jinming and Liu, Ming and Gao, Longxiang and Jin, Yuan and Du, Lan and Zhao, He and Zhang, He and Haffari, Gholamreza},
+  booktitle={Proceedings of the 43rd International ACM SIGIR Conference on Research and Development in Information Retrieval},
+  pages={1949--1952},
+  year={2020}
+}
+```
